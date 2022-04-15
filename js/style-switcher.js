@@ -10,6 +10,11 @@ window.addEventListener("scroll", () =>{
         document.querySelector(".style-switcher").classList.remove("open")
     }
 })
+window.addEventListener("wheel", () =>{
+    if(document.querySelector(".style-switcher").classList.contains("open")){
+        document.querySelector(".style-switcher").classList.remove("open")
+    }
+})
 // HIDE STYLE SWITCHER ON SCROLL END
 // THEME COLORS START
 const alternateStyle = document.querySelectorAll(".alternate-style");
